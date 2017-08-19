@@ -1,0 +1,19 @@
+Source: libdisplaycore-toolkit-gciwidget
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-toolkit-gciwidget
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Toolkits
+Depends: libdisplaycore-core, libsd-chipkit
+Provides: gciWidget.h
+Description: gciWidget library
+ Display and interact with widgets created using 4D Systems Workbench
+
+
+

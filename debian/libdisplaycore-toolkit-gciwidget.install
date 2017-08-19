@@ -1,0 +1,3 @@
+examples/ libraries/DisplayCore/gciWidget
+gciWidget.cpp libraries/DisplayCore/gciWidget
+gciWidget.h libraries/DisplayCore/gciWidget
