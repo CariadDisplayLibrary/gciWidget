@@ -72,7 +72,7 @@ void gciWidget::load() {
     _loaded = true;
 }
 
-void gciWidget::draw(DisplayCore *dev, int x, int y) {
+void gciWidget::draw(DisplayCore *dev, int __attribute__((unused)) x, int __attribute__((unused)) y) {
     File f;
     load();
     char temp[strlen(_filename) + 5];
@@ -83,7 +83,7 @@ void gciWidget::draw(DisplayCore *dev, int x, int y) {
     if (f = SD.open(temp)) {
         f.seek(_offset + sizeof(struct gcihdr) + (framesize * getValue() * 2));
         dev->openWindow(_x, _y, _sense_w, _sense_h);
-        uint32_t done = 0;
+        int done = 0;
         color_t buf[IMG_BUFSZ];
         while (done < framesize) {
             int chunk = framesize - done;

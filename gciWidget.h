@@ -20,11 +20,11 @@ class gciWidget : public Widget {
     private:
         void load();
 	public:
-        bool _loaded;
         File *_file;
         gcihdr _header;
         const char *_filename;
         const char *_widgetname;
+        bool _loaded;
 		uint32_t _offset;
 
 		gciWidget(Touch &ts, DisplayCore &dev, const char *fn, const char *wn)
