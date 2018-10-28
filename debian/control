@@ -12,7 +12,7 @@ XBSC-Group: DisplayCore
 XBSC-Subgroup: Toolkits
 Depends: libdisplaycore-core, libsd-chipkit
 Provides: gciWidget.h
-Description: gciWidget library
+Description: 4D gciWidget
  Display and interact with widgets created using 4D Systems Workbench
 
 
