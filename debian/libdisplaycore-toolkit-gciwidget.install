@@ -1,3 +1,4 @@
-examples/ libraries/DisplayCore/gciWidget
-gciWidget.cpp libraries/DisplayCore/gciWidget
-gciWidget.h libraries/DisplayCore/gciWidget
+examples libraries/DisplayCore/gciWidget
+library.json libraries/DisplayCore/gciWidget
+library.properties libraries/DisplayCore/gciWidget
+src libraries/DisplayCore/gciWidget
