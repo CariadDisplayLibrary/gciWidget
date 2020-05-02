@@ -3,7 +3,7 @@
 
 #include <WProgram.h>
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 #include <SD.h>
 
 #define IMG_BUFSZ 256
@@ -27,12 +27,12 @@ class gciWidget : public Widget {
         bool _loaded;
 		uint32_t _offset;
 
-		gciWidget(Touch &ts, DisplayCore &dev, const char *fn, const char *wn)
+		gciWidget(Touch &ts, Cariad &dev, const char *fn, const char *wn)
             : Widget(ts, dev, 0, 0), _filename(fn), _widgetname(wn), _loaded(false) {
             _touch = true;
         }
 
-        void draw(DisplayCore *dev, int x, int y);
+        void draw(Cariad *dev, int x, int y);
 		int getFrames();
 
         int getWidth() { return _sense_w; }

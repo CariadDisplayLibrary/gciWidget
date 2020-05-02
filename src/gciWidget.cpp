@@ -72,7 +72,7 @@ void gciWidget::load() {
     _loaded = true;
 }
 
-void gciWidget::draw(DisplayCore *dev, int __attribute__((unused)) x, int __attribute__((unused)) y) {
+void gciWidget::draw(Cariad *dev, int __attribute__((unused)) x, int __attribute__((unused)) y) {
     File f;
     load();
     char temp[strlen(_filename) + 5];

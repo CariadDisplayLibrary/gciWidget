@@ -1,0 +1,4 @@
+examples libraries/Cariad/gciWidget
+library.json libraries/Cariad/gciWidget
+library.properties libraries/Cariad/gciWidget
+src libraries/Cariad/gciWidget
